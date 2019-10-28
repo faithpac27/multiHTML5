@@ -1,0 +1,86 @@
+/* 기본 box-sizing 정의 */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+/* 컨테이터 */
+.container{
+  background-color: yellow;
+}
+
+/* 레이아웃 */
+.header, .visual, .main, .slogan, .footer{
+  width: 940px;
+  /* border: 10px solid black;
+  padding:10px; 
+  margin:0 auto;*/
+  margin-left: auto; /*with가 있어야 가능*/
+  margin-right: auto;
+}
+/* 헤더 */
+.header{
+  background-color: pink;
+  height:10vh;
+}
+
+/* 비주얼 */
+.visual{
+  background-color: lime;
+  height:120px;
+}
+/* 메인컨텐츠 */
+.main{
+  display: flex;
+  /* direction에 따라 메인과 교차축이 달라짐, direction 이 row면 메인은 x축*/
+  /* flex-direction: row;   
+  flex-wrap: wrap; */
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: blue;
+  height:60vh;
+  padding : 30px;
+}
+
+.group{
+  
+}
+/* group */
+.group1{
+  background-color: silver;  
+  width: 250px;
+
+  /*flex: 1 0 0;
+   flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0; */
+  /* order:1; 부모가 flex속성이어야만 의미 있음 */
+
+}
+/* group */
+.group2{
+  background-color: tan;  
+  width: 380px;
+
+  /* flex-grow: 2;
+  flex-shrink: 0;
+  flex-basis: 0; */
+
+}
+/* group */
+.group3{
+  background-color: teal;  
+  width: 190px;
+
+  /* flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0; */
+}
+/* 슬로건 */
+.slogan{
+  background-color: coral;
+  height:10vh;
+}
+/* footer */
+.footer{
+  background-color: violet;
+  height:10vh;
+}
