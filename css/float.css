@@ -29,31 +29,35 @@
 }
 /* 메인컨텐츠 */
 .main{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
   background-color: blue;
-  height:60vh;
-  padding : 30px 15px;;
+  padding : 30px 15px;
+  
+  
 }
 
 .group{
-  margin: 0 15px;
+  margin:0 15px;
+  float:left;
+  min-height: 400px;
 }
 /* group */
 .group1{
   background-color: silver;  
   width: 250px;
+
+  
 }
 /* group */
 .group2{
   background-color: tan;  
   width: 380px;
+
 }
 /* group */
 .group3{
   background-color: teal;  
   width: 190px;
+
 }
 /* 슬로건 */
 .slogan{
