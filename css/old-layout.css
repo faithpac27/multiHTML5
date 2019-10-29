@@ -1,0 +1,25 @@
+/* 
+
+로고
+.logo{
+  position: absolute;
+  top:50px;
+  left:70px;
+} */
+/* 멤버링크 */
+.member{  
+  font-size:0;
+  text-align: right;
+}
+.member li{
+  display:inline-block; /*화면은 블록 내부는 인라인*/
+  font-size:1.6rem;
+}
+
+
+/* 메인컨텐츠 */
+.group{
+  margin:0 15px;
+  float:left;
+  min-height: 400px;
+}

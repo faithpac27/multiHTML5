@@ -1,0 +1,20 @@
+/* 멤버링크 */
+.member{
+  display:flex;
+  justify-content: flex-end;
+  position: relative;
+  right: -0.5em;
+}
+
+
+
+/* 메인컨텐츠 */
+.main{
+  display: flex;
+  flex-flow: row nowrap;
+  height:60vh;  
+}
+
+.group{
+  margin: 0 15px;
+}
