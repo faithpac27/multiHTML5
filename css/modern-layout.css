@@ -5,9 +5,21 @@
   position: relative;
   right: -0.5em;
 }
+/* 네비게이션 */
+.menu{ 
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
 
+.menu-item{  
+  display: flex;
+  align-items: center;  
+}
 
-
+.menu-act .sub-menu{
+  display:flex;
+}
 /* 메인컨텐츠 */
 .main{
   display: flex;

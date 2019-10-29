@@ -25,12 +25,71 @@
   padding : 2px 30px 10px;  
   right: -0.5em;
 }
+
+/* 로고 */
+.logo{
+  position: absolute;
+  top:45px;
+  left:70px;
+}
+
+
 /* 멤버링크 */
+.member{
+  margin-bottom: 2px;
+}
+
 .member a{
   display:inline-block; /*화면은 블록 내부는 인라인*/
   text-transform: uppercase;
   padding:  0.5em;  
+  
+
 }
+
+/* 내비게이션 */
+.navigation{
+  background: yellow;
+  padding-bottom: 50px;
+}
+.menu{
+  border-top:2px solid #000;
+  height: 50px;
+  padding-left: 240px;
+  background: rgb(251,155,45);
+  background: linear-gradient(to bottom, #ef9643 1%,#f7752e 35%,#f7752e 70%,#ef9643 100%);
+  background: linear-gradient(180deg, rgba(251,155,45,1) 0%, rgba(246,131,0,1) 35%, rgba(246,131,0,1) 70%, rgba(251,155,45,1) 100%);
+}
+
+.menu-item{
+  border-left: 2px solid rgba(255,255,255,0.5);
+  position: relative;
+}
+
+.btn-menu{
+  color:#fff;
+  font-weight: 700;
+  font-size:1.6rem;
+  padding: 1em;
+  text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+
+.sub-menu{
+  background: pink;
+  display: none;
+  position: absolute;
+  white-space: nowrap;
+  top:52px;
+}
+
+.sub-menu1, .sub-menu2, .sub-menu3 {
+  left:0;
+}
+.sub-menu4, .sub-menu5, .sub-menu6 {
+  right:0;
+}
+
+
 /* 비주얼 */
 .visual{
   background-color: lime;
