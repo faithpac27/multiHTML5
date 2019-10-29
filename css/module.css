@@ -4,3 +4,14 @@
   display : block;
   clear:both;
 }
+
+/* 숨김 컨텐츠 */
+.a11y-hidden{
+  position : absolute;
+  /* top:-9999em; */
+  width:1px;
+  height: 1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0); /*clip 속성은 absolute를 사용할 수 있음 */
+  clip-path: polygon(0 0, 0 0 , 0 0);
+}
