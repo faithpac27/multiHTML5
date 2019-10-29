@@ -1,11 +1,4 @@
-/* 
 
-로고
-.logo{
-  position: absolute;
-  top:50px;
-  left:70px;
-} */
 /* 멤버링크 */
 .member{  
   font-size:0;
@@ -16,6 +9,19 @@
   font-size:1.4rem;
 }
 
+/* 내비게이션 */
+.menu-item{
+  float:left;
+}
+.btn-menu{
+  line-height: 48px;
+}
+.menu-act .sub-menu{
+  display:block;
+}
+.sub-menu li{
+  display: inline-block;
+}
 
 /* 메인컨텐츠 */
 .group{
