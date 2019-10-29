@@ -31,7 +31,7 @@
 .main{
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-color: blue;
   height:60vh;
   padding : 30px 15px;;
