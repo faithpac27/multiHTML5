@@ -252,6 +252,23 @@
 .sign a::before{
   color:#db5e29;
 }
+/* 유효성 검사 배너 */
+.validation-list{
+  margin-top: 25px;  
+}
+.validation-list a{
+  display: block;
+  border : 1px solid #aaa;
+  border-radius:  30px;
+  line-height: 30px;
+  background: url("../images/validation_icon.png") no-repeat 2em 50%,
+            linear-gradient(to bottom, #ccc, #eee) repeat 0 0;
+  padding-left: 4em;
+  margin-top: 10px; 
+}
+
+
+
 
 /* 슬로건 */
 .slogan{
