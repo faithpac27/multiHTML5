@@ -13,9 +13,7 @@
 .menu-item{
   float:left;
 }
-.btn-menu{
-  line-height: 48px;
-}
+
 .menu-act .sub-menu{
   display:block;
 }

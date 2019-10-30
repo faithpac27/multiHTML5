@@ -12,10 +12,6 @@
   /* align-items: center; */
 }
 
-.menu-item{  
-  display: flex;
-  align-items: center;  
-}
 
 .menu-act .sub-menu{
   display:flex;
