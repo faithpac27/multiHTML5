@@ -126,7 +126,24 @@
   background-color: lime;
   height:120px;
 }
+/* 비주얼 텍스트 */
+.visual-text{
+  width: 500px;
+  color: rgba(0,0,0,0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-weight: 700; 폰트 굵기*/
+  /* animation-name: text-ani;   /*에니메이션 필수 속성
+  animation-duration: 5000ms;  에니메이션 필수 속성
+  animation-fill-mode: forwards; 다시 원래자리로 돌아가지 않도록
+  animation-delay: 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate; 
+  animation-timing-function: cubic-bezier(0,-0.67,.87,.03);*/
+  animation-play-state: paused;
 
+  animation: text-ani 500ms forwards;
+
+}
 /* 메인컨텐츠 */
 .main{
   background-color: #fff;
