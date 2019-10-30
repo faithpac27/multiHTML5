@@ -5,17 +5,17 @@
   text-align: right;
 }
 .member li{
-  display:inline-block; /*화면은 블록 내부는 인라인*/
-  font-size:1.4rem;
+  display: inline-block; /*화면은 블록 내부는 인라인*/
+  font-size: 1.4rem;
 }
 
 /* 내비게이션 */
 .menu-item{
-  float:left;
+  float: left;
 }
 
 .menu-act .sub-menu{
-  display:block;
+  display: block;
 }
 .sub-menu li{
   display: inline-block;
@@ -29,7 +29,6 @@
 }
 
 /* 로그인 */
-
 .sign::after{
   content:"";
   display:block;

@@ -198,21 +198,28 @@
   box-shadow: 5px 5px 0 0 #ccc;
   padding : 10px;
 }
-
 .login-heading{
   color: #ff0;
   font-weight: 400;
   font-size: 1.5rem;
   padding-left: 1em;
 }
-
+.login-form, .sign{
+  background-color:#fff;
+}
+.login-form{
+  margin-top: 0.5em;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 5px 10px;
+}
 .login-form fieldset{
-  position: relative;
-  
+  position: relative;  
   border-bottom: 1px solid #aaa;
   padding-bottom:5px;  
 }
-
+.user-id, .user-pw{
+  margin-bottom: 5px;
+}
 [for="user-id"],[for="user-pw"]{
   width: 4em;
   display:inline-block;
@@ -223,26 +230,19 @@
   width: 90px;
   padding-left: 0.5em;
 }
-
-.user-id, .user-pw{
-  margin-bottom: 5px;
-}
 .btn-login{
   position: absolute;
   top:0;
   right:0;
   width: 50px;
   height: 54px;
-  border:1px solid #db5e29;
+  border: 1px solid #db5e29;
   border-radius: 3px;
   color: #fff;
   background-color: #f28430;
   padding:0;
   font-size:1.2rem;
   font-weight: 400;
-}
-.login-form, .sign{
-  background-color:#fff;
 }
 .sign{
   border-radius:  0 0 5px 5px;
@@ -252,16 +252,6 @@
 .sign a::before{
   color:#db5e29;
 }
-
-.login-form{
-  margin-top: 0.5em;
-  border-radius: 5px 5px 0 0;
-  padding: 10px 10px 5px 10px;
-}
-
-
-
-
 
 /* 슬로건 */
 .slogan{
