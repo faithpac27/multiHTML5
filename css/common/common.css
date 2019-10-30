@@ -123,9 +123,36 @@
 
 /* 비주얼 */
 .visual{
-  background-color: lime;
   height:120px;
+  position: relative;
 }
+/* 비주얼 배경 이미지 */
+.visual::before, .visual::after{
+  content:"";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;  
+  animation: bg-ani 2000ms infinite alternate;
+}
+
+.visual::before{
+  /* background-image: url("../images/ani_flower_01.png"), url("../images/ani_flower_02.png");
+  background-repeat: no-repeat;
+  background-position: 0 -10px, 670px 0; */
+  background: url("../images/ani_flower_01.png") no-repeat 0 -10px,
+  url("../images/ani_flower_02.png") no-repeat 670px 0 ;
+ 
+}
+.visual::after{
+  background: url("../images/ani_flower_03.png") no-repeat 300px 0,
+  url("../images/ani_flower_04.png") no-repeat 800px 0 ;
+  animation-delay: 1000ms;
+}
+
+
+
 /* 비주얼 텍스트 */
 .visual-text{
   width: 500px;
@@ -138,8 +165,8 @@
   animation-delay: 3s;
   animation-iteration-count: 3;
   animation-direction: alternate; 
-  animation-timing-function: cubic-bezier(0,-0.67,.87,.03);*/
-  animation-play-state: paused;
+  animation-timing-function: cubic-bezier(0,-0.67,.87,.03);
+  animation-play-state: paused;*/
 
   animation: text-ani 500ms forwards;
 
