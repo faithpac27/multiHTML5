@@ -169,7 +169,6 @@
   animation-play-state: paused;*/
 
   animation: text-ani 500ms forwards;
-
 }
 /* 메인컨텐츠 */
 .main{
@@ -180,20 +179,26 @@
 
 /* group */
 .group1{
-  background-color: silver;  
+  
   width: 250px;  
 }
 /* group */
 .group2{
-  background-color: tan;  
+  
   width: 380px;
 }
 /* group */
 .group3{
-  background-color: teal;  
+  
   width: 190px;
 }
 
+/* 로그인 */
+.login{
+  background-image: radial-gradient(circle at right top, #ef9643, #f7752e);
+  border-radius: 5px;
+  
+}
 /* 슬로건 */
 .slogan{
   background-color: coral;
