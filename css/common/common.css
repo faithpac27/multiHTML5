@@ -364,12 +364,12 @@
   display:block;
 }
 
-.notice-list li, .pds_list li{  
+.notice-list li, .pds-list li{  
   margin-top: 0.5em;
   display: flex;
   justify-content: space-between;
 }
-.notice-list a, .pds_list a{  
+.notice-list a, .pds-list a{  
   width: 290px;
   white-space: nowrap;/*메인메뉴에서 개행 금지 목적으로 썼던 부분 참고*/
   overflow: hidden;
