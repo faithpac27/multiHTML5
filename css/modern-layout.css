@@ -1,43 +1,36 @@
-/* 멤버링크 */
+/* 멤버 링크 */
 .member{
-  display:flex;
+  display: flex;
   justify-content: flex-end;
   position: relative;
   right: -0.5em;
 }
-/* 네비게이션 */
-.menu{ 
+/* 내비게이션 */
+.menu{
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
-
-
 .menu-act .sub-menu{
-  display:flex;
+  display: flex;
 }
 
-/* 메인컨텐츠 */
+/* 메인 콘텐츠 */
 .main{
   display: flex;
   flex-flow: row nowrap;
-  height:60vh;  
+  height: 60vh;
 }
-
 .group{
   margin: 0 15px;
 }
-
-
 /* 로그인 */
 .sign{
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
-
-/* 검색폼 */
+/* 검색 폼 */
 .search-form-wrapper{
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
 }
