@@ -22,6 +22,9 @@
 }
 
 /* 메인컨텐츠 */
+.main{
+  display:block;
+}
 .group{
   margin:0 15px;
   float:left;
