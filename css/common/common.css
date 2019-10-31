@@ -267,7 +267,41 @@
   margin-top: 10px; 
 }
 
+/* 웹 관련 용어 */
+.term{
+  margin-top: 20px;
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: #ccc linear-gradient(#ccc, #eee);
+}
+.term-heading{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.term-list{
+  margin-top: 10px;  
+}
 
+.term-list-subject{
+  color: #296897;
+  margin-top: -4px;
+  font-weight: 400;
+}
+.term-list-subject, .term-list-brief{
+  float: right;
+  width: 145px;
+}
+.term-list-brief{
+  line-height: 1.5;
+}
+
+.term-list-thumbnail{
+  float: left;  
+}
+.term-list-thumbnail img{
+  vertical-align: top;
+}
 
 
 /* 슬로건 */
