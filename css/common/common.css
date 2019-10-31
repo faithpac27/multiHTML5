@@ -282,7 +282,6 @@
 .term-list{
   margin-top: 10px;  
 }
-
 .term-list-subject{
   color: #296897;
   margin-top: -4px;
@@ -295,13 +294,39 @@
 .term-list-brief{
   line-height: 1.5;
 }
-
 .term-list-thumbnail{
   float: left;  
 }
 .term-list-thumbnail img{
   vertical-align: top;
 }
+
+
+/* 검색 폼 */
+.search-form{
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: solid 1px #aaa;  
+  border-bottom: 0;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 20px 10px;    
+}
+
+[type="search"], .btn-search{
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  height: 24px;
+}
+[type="search"]{
+  padding-left: 0.5em;
+  width: 200px;
+}
+.btn-search{
+  background-color: #333;
+  color:#fff;
+  padding : 0 1em;
+}
+
+
 
 
 /* 슬로건 */

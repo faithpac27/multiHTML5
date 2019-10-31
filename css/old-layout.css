@@ -40,3 +40,8 @@
 .sign li:last-child{
   float:right;
 }
+
+/* 검색폼 */
+[type="search"]{
+  margin:0 2px;
+}

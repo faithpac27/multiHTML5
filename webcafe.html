@@ -173,7 +173,23 @@
           </dl>
         </section>
       </div>
-      <div class="group group2">그룹2</div>
+      <div class="group group2">
+        <section class="search">
+          <h2 class="a11y-hidden">검색</h2>
+          <form action="https://formspree.io/mwkewlao" method="POST" class="search-form">
+            <fieldset>
+              <legend>검색 폼</legend>
+              <div class="search-form-wrapper"> 
+                <label for="search" class="icon-search">자료검색</label>
+                <input type="search" id="search" placeholder="검색어를 입력하세요." required> 
+                <button type="submit" class="btn-search" >검색</button> 
+              </div>
+            </fieldset>
+          </form>
+          <!-- html5부터 form태그에 id를 주고 form 영역 밖에서 button 사용가능
+          <button type="submit" class="btn-search" form="searchForm">검색</button>  -->
+        </section>
+      </div>
       <div class="group group3">그룹3</div>
       
     </main>

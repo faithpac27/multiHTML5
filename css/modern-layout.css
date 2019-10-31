@@ -34,3 +34,10 @@
   display:flex;
   justify-content: space-between;
 }
+
+/* 검색폼 */
+.search-form-wrapper{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
