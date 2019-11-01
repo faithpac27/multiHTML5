@@ -125,6 +125,8 @@
 .visual{
   height:120px;
   position: relative;
+  background: url("../images/bg_flower.png") no-repeat 0 0 ;
+  background-position: -40px -130px;
 }
 /* 비주얼 배경 이미지 */
 .visual::before, .visual::after{
@@ -389,56 +391,249 @@
   padding: 0.5em;
 }
 
-/* 새소식 
+/* 새소식  */
+
 .news{
-  background-color: yellow;
-  margin-top: 20px;
-  
+  margin-top: 20px;  
   position: relative;
+}
+
+.news::before{
+  content:"";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  background : #ccc linear-gradient(to right, #ccc, #eee)
+}
+.news-heading{
+  color:#db5e29;
+  font-weight: 700;
+  font-size:1.5rem;
+}
+.news-item{
+  margin-top: 35px;
+  padding-left: 130px;
+  min-height: 110px; /*내용이 속보 등으로 짧을 경우 썸네일이 영역 밖으로 나가는 현상을 방지하기 위해*/
+}
+.news-item-subject{  
+  font-weight: 700;
+}
+.news-item-summary{  
+  margin-top: 0.5em;
+  line-height: 1.5;  
 }
 .news-more{
   position : absolute;
-  top:0;
-  right:0;
-}
-.news-heading{
-  
-  color:#db5e29;
-  font-size:1.2em;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.news-heading::after{
-  width: 100px;
-  height: 1px;
-  border: 1px solid #aaa;
-  background-color: teal;
-}
-.news-item-subject, .news-item-summary {
-  position: absolute;
-  left:120px;
-  
-}
-.news-item-date{
-
-}
-.news-item-subject{  
-  top:70px;
-}
-
-.news-item-summary{
-  top:90px;
-
+  top:-0.5em;
+  right:-0.5em;
+  padding: 0.5em;
 }
 .news-item-thumbnail{
-  background-color: violet;
-
-  left:0;
-  top:120px;
-  display:block;
+  position: absolute;
+  left: 5px;
+  top: 63px;
+  text-align: center;
+}
+.news-item-thumbnail img{
+  margin-bottom: 1em;
+  box-shadow: 0 15px 15px 5px #ccc;
+  /*x ,y , 흐릿, 퍼지는효과, */
 }
 
+
+/* 이벤트 및 관련 사이트*/
+.gradient-box{
+  background-color: yellow;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding:10px;
+  background : #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+.event-heading, .related-heading, .favorite-heading{
+  font-size:1.5rem;
+  font-weight: 700;
+}
+.point-color{
+  color:#db5e29;
+}
+
+.event-thumbnail{
+  margin-top: 10px;  
+}
+.event-thumbnail img{  
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #999;
+  margin-bottom: 5px;   */
+}
+.event{
+  position: relative;    
+}
+.btn-event-wrapper{
+  position: absolute;
+  top:3px;
+  right:0;  
+}
+/* .btn-event-wrapper button{ */
+.btn-event-prev, .btn-event-next{
+  height: 18px;  
+  width: 19px;
+  border:0;
+  padding: 0;
+  /* background: pink url("../images/back_forward.png") no-repeat; */
+  background-color: pink;
+  background-image: url("../images/back_forward.png");
+  background-repeat: no-repeat;
+  vertical-align: top; /*파폭에서 제대로 안보여서*/
+
+}
+/* 우선순위(구체성점수)가 같을 때 나중에 선언된 것을 불러온다는 것을 확인 필요 
+   ! important 를 사용하는 것과 결과는 동일!!! 
+   따라서 요소선택자 및 대표속성 사용을 지양할 것!!*/
+button.btn-event-next{ 
+  background-position: -36px 0;
+}
+/* a태그 사용시
+.btn-event-wrapper{
+  background-color: yellow;
+  position: absolute;
+  top:0;
+  right:0;
+  overflow:hidden;
+}
+
+.btn-event-wrapper a{
+  
+  float: left;
+  height: 18px;  
+  width: 19px;
+  border:0;
+  padding: 0;
+  background-color: pink;  
+}
 */
+.related{
+  border-top: 1px solid #aaa;
+  padding-top: 0.5em;
+  margin-top: 10px;
+}
+.related-list{
+  background : #fff;
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 2px 1em;
+
+  height: 27px;  /**/
+  overflow: hidden;
+  /*
+  transition: height 800ms, padding 400ms 800ms, background 400ms 1200ms,
+  border-radius 400ms 800ms, transform 2000ms 2000ms;
+  위에 속성들을 지연 없이 한번에 하고 싶다면 */
+  transition: all 400ms;
+}
+.related-list:hover{
+  height: 120px;
+  padding: 0.5em 1em;  
+  /* background: goldenrod;
+  border:2px solid #000;
+  border-radius: 50%;
+  transform:rotate(2turn); */
+}
+.related-list a{  
+  display:block;
+  line-height: 21px;
+}
+
+/* 인기사이트 */
+.favorite{
+  margin-top: 20px;
+  position: relative;
+}
+.favorite-list{
+  list-style:none; /*리스트 앞에 불릿 지우기*/
+  margin-top: 10px;
+  counter-reset: none;
+  /*
+  flex-direction: column; */
+  /* justify-content: space-between; */  
+}
+
+.favorite-list li{
+  margin-top: 0.3em;
+  counter-increment: number;
+  display:flex;  
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.favorite-list li::before{
+  content: counter(number);
+  background: #999;
+  color: #fff;
+  font-size: 1.2rem;;
+  padding: 2px 0.5em 2px;
+  margin-right: 0.5em;
+  border-radius: 2px;
+  /* 
+  border: 1px solid #666;
+  width: 20px;
+  height: 20px;
+  display: inline-block; */
+
+} 
+.up, .stop, .down{
+  /* display: block;  */
+  width: 9px;
+  height: 11px;
+  margin-left: auto;
+  background: url(../images/rank.png) no-repeat;
+  white-space: nowrap;
+  text-indent : 10px;
+  overflow: hidden;
+}
+.stop{
+  background-position: 0 50%;
+}
+.down{
+  background-position: 0 100%;
+}
+.favorite-more{
+  position: absolute;
+  padding: 0.5em;  
+  top: 3px;
+  right:3px;
+}
+/* 
+.favorite-list em{
+  align-items: flex-end ;
+}
+
+
+
+
+
+.favorite-heading{
+  /* background: yellow; */
+  margin-bottom: 10px;
+} */
+
+
+
+/* /images/ranks.png */
+.no1::before{
+  content:"";
+  background-color: red;
+  /* display:block;
+  top:20px; */
+}
+
+
+
+
+
+
 
 
 /* 슬로건 */
