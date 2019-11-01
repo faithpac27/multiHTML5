@@ -5,7 +5,9 @@
 /* 컨테이터 */
 .container{
   background-color: #ccc;
-  background-image: linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 60%, #fff 100%);
+  background-image:  url("../images/bg_flower.png"), linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 60%, #fff 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: 50% 0, 0 0;;
 }
 
 /* 레이아웃 */
@@ -125,8 +127,7 @@
 .visual{
   height:120px;
   position: relative;
-  background: url("../images/bg_flower.png") no-repeat 0 0 ;
-  background-position: -40px -130px;
+  
 }
 /* 비주얼 배경 이미지 */
 .visual::before, .visual::after{
@@ -605,21 +606,6 @@ button.btn-event-next{
   top: 3px;
   right:3px;
 }
-/* 
-.favorite-list em{
-  align-items: flex-end ;
-}
-
-
-
-
-
-.favorite-heading{
-  /* background: yellow; */
-  margin-bottom: 10px;
-} */
-
-
 
 /* /images/ranks.png */
 .no1::before{
@@ -630,23 +616,82 @@ button.btn-event-next{
 }
 
 
-
-
-
-
-
-
 /* 슬로건 */
 .slogan{
-  background-color: coral;
-  height:10vh;
+  position: relative;
+  padding: 10px 100px 10px 150px;
 }
+.slogan-heading{
+  
+  position: absolute;
+
+  left: 35px;
+  bottom: -25px;
+  width: 110px;
+  height: 83px;
+  text-align: center;
+  line-height: 83px;
+}
+.slogan-heading::after{
+  content:"";
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background: url("../images/coffee.png") no-repeat 0 0;
+}
+
+.slogan-content{
+  color: #a09784;
+}
+.slogan-content q::before{
+  font-size: 3.5rem;
+  position: relative;
+  top: 10px;
+}
+.slogan-content q::after{
+  content: "";
+}
+
+
 /* footer */
 .footer-bg{
   background-color: #ccc;
   background-image: linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 60%, #fff 100%);
 }
 .footer{
-  background-color: violet;
-  height:10vh;
+  position: relative;
+  padding: 15px 100px 10px 150px;
+}
+/* 푸터 로고 */
+.footer-logo{
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+/* 가이드링크 */
+.guide-list{
+  background: #7b8385;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2px 0;
+}
+.guide-list a{
+  text-transform: uppercase;
+  display: block;
+  padding: 0.5em 0;
+}
+/* 주소 및 저작권 정보 */
+.address{
+  font-style: normal;
+  margin-top: 10px;
+}
+/* HTML5와 CSS3 로고 */
+.badge{
+  position: absolute;
+  top: 10px;
+  right: 0;
 }
